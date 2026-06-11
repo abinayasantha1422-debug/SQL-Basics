@@ -1,0 +1,20 @@
+Q1. Create a Database named E-Commerce, Create a table as Amazon with product_id,Product_name,price and Qty
+
+
+create database E_commerce;
+use E_commerce;
+
+create table Amazon (
+    product_id int primary key,
+    Product_name varchar(100) not null,
+    price decimal(10,2) not null,
+    Qty int not null
+);
+
+insert into Amazon (product_id, Product_name, price, Qty) values
+(101, 'Laptop', 55000.00, 10),
+(102, 'Smartphone', 25000.00, 20),
+(103, 'Headphones', 1500.00, 50);
+
+select * from Amazon;
+
